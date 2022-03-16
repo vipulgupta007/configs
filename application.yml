@@ -1,0 +1,3 @@
+identityservice:
+  circuit-breaker:
+    enable: true
