@@ -19,4 +19,4 @@ resilience4j:
           
 circuit-breaker:
   default:
-    state: OPEN
+    state: CLOSED
