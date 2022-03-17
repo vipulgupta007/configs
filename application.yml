@@ -1,3 +1,22 @@
 identityservice:
   circuit-breaker:
-    enable: false
+    enable: true
+    
+resilience4j:
+  circuitbreaker:
+    configs:
+      identity:
+        registerHealthIndicator: true
+        slidingWindowSize: 6000
+        minimumNumberOfCalls: 5
+        failureRateThreshold: 50
+        automaticTransitionFromOpenToHalfOpenEnabled: false
+        permittedNumberOfCallsInHalfOpenState: 3
+        waitDurationInOpenState: 10000
+        slidingWindowType: TIME_BASED
+        ignoreExceptions:
+          - com.tesco.stockservices.commons.security.exception.AuthenticationException
+          
+circuit-breaker:
+  default:
+    state: CLOSED
