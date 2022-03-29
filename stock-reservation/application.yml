@@ -1,3 +1,2 @@
-identityservice:
-  circuit-breaker:
-    enable: true
+circuit-breaker:
+  refreshState: OPEN
