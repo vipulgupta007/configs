@@ -1,8 +1,7 @@
 circuit:
   breaker:
-    refreshState: CLOSED
-
+    refreshState: OPEN
 refresh:
   circuit:
     breaker:
-      name: identityService
+      name: testService
