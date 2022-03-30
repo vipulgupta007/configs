@@ -4,4 +4,4 @@ circuit:
 refresh:
   circuit:
     breaker:
-      name: identityService
+      name: testService
