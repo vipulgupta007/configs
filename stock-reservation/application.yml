@@ -1,6 +1,6 @@
 circuit:
   breaker:
-    refreshState: CLOSED
+    refreshState: OPEN
 refresh:
   circuit:
     breaker:
